@@ -14,7 +14,6 @@ fun getUserChoice(options: Array<String>): String? {
         println("Make your choice: rock - paper - scissors - lizard - spock")
         userChoice = readLine()
     } while(!options.contains(userChoice))
-
     return userChoice
 }
 
@@ -23,7 +22,7 @@ fun determineWinner(computerChoice: String, userChoice: String?){
         println("draw")
         return
     }
-    val winMessage ="WINNER WINNER CHICKEN DINNER WOOOOOOOHOOOOOOOOOO"
+    val winMessage ="winner!"
     val loseMessage = "loser!"
 
     when(computerChoice){
