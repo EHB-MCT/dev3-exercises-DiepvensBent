@@ -19,10 +19,10 @@ fun challenge1() {
         println("Until...")
         println("The door opens automatically...")
         println("Who would've thought a school being open during the day.....")
-        println("Well, i guess everyone but you........")
+        println("Well, I guess everyone but you........")
         println("The school is bustling with activity.")
         println("No idea how you are going to steal when there are so many people here.")
-        println("But you do you i guess...")
+        println("But you do you I guess...")
         println("You enter the building and proceed further down the hall.")
         println("Suddenly someone taps your shoulder")
         println("It's Bert!")
@@ -32,7 +32,7 @@ fun challenge1() {
         println("Without being able to answer he takes you with him to the classroom")
         println("*4 HOURS LATER*")
         println("You leave the classroom mentally exhausted. He kept on talking about some weird island called 'Kotlin?' ")
-        println("You are to tired to do any stealing so you go back home.")
+        println("You are too tired to do any stealing so you go back home.")
         println("GAME OVER")
     } else if (userChoice == "2"){
         println("You decide to break-in during the night.")
@@ -40,7 +40,7 @@ fun challenge1() {
     }
 }
 fun challenge2() {
-    println("The second challenge starts.")
+    
 }
 
 
