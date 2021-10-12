@@ -31,3 +31,31 @@ fun determineWinner(computerChoice: String, userChoice: String?){
         "scissors" -> if(userChoice == "rock" || userChoice == "spock") println(winMessage) else println(loseMessage)
     }
 }
+
+fun main(){
+    challengeOne()
+}
+
+fun challengeOne(){
+    val answers = setOf<Strings>("Bear","Pooh")
+    println("name bear")
+    val userAnswer = readLine()
+
+    if (answers.contain(userAnswer)){
+        challengeTwo()
+    } else {
+        //gameover
+    }
+}
+fun challengeTwo(){
+    val diceResult = (1..6).random()
+    val userAnswer = readLine()
+
+    if (userAnswer == "low" && (1..3).contains(diceResult)){
+        //win
+    } else if (userAnswer == "high" && (4..6).contains(diceResult)){
+        //win
+    } else {
+        //game over
+    }
+}

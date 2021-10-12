@@ -10,7 +10,7 @@ fun challenge1() {
     println("Will you: ")
     println("1: Break in at day.")
     println("2: Break in at night.")
-    val options1 = arrayOf("1","2")
+    val options1 = setOf("1","2")
     val userChoice = getUserChoice(options1)
     if (userChoice == "1"){
         println("You decide to break-in during the day.")
@@ -40,12 +40,12 @@ fun challenge1() {
     }
 }
 fun challenge2() {
-    
+
 }
 
 
 
-fun getUserChoice(options: Array<String>): String? {
+fun getUserChoice(options: Set<String>): String? {
     var userChoice: String?
     do {
         println("Type a number to make a choice")
