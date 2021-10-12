@@ -1,5 +1,5 @@
 fun main () {
-    println("You are a student of the Erasmus Hogeschool Brussel and follow the subject DEV2 which 'definitely' is your favorite.")
+    println("You are a student of the Erasmus Hogeschool Brussel and follow the subject DEV3 which 'definitely' is your favorite.")
     println("Bert your teacher, has hidden the answers to the practical exam in the school.")
     println("Thus starts your quest to steal the exam answers.")
     println("The great Erasmus Break-In begins!")
@@ -28,7 +28,7 @@ fun challenge1() {
         println("It's Bert!")
         println("Bert: Oh, hi there! What are you doing here? You shouldn't have any lessons.")
         println("You struggle to find an answer")
-        println("Bert: Oh! I know! You're here to follow an extra lesson of your favorite subject DEV2!")
+        println("Bert: Oh! I know! You're here to follow an extra lesson of your favorite subject DEV3!")
         println("Without being able to answer he takes you with him to the classroom")
         println("*4 HOURS LATER*")
         println("You leave the classroom mentally exhausted. He kept on talking about some weird island called 'Kotlin?' ")
@@ -76,6 +76,8 @@ fun challenge3(){
 }
 
 fun challenge4(){
+    println("you found a safe exam must be in there now guess the code")
+
 
 }
 
@@ -86,4 +88,8 @@ fun getUserChoice(options: Set<String>): String? {
         userChoice = readLine()
     } while (!options.contains(userChoice))
     return userChoice
+}
+
+fun guessCode(options: ){
+
 }
