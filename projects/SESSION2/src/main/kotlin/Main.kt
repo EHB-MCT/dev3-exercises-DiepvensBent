@@ -40,10 +40,26 @@ fun challenge1() {
     }
 }
 fun challenge2() {
+    println("door closed pick lock")
+    println("dodge alarm choose red or blue")
+    val diceResult=(1..6).random()
+    val userAnswer = readLine()
+    if (userAnswer == "red" && (1..3).contains(diceResult)){
+        println("door unlocked gj")
+        challenge3()
+    } else if (userAnswer == "blue" && (4..6).contains(diceResult)){
+        println("door unlocked gj")
+        challenge3()
+    } else {
+        println("door go boom with you aswell")
+        println("GAME OVER")
+    }
 
 }
 
-
+fun challenge3(){
+    
+}
 
 fun getUserChoice(options: Set<String>): String? {
     var userChoice: String?
