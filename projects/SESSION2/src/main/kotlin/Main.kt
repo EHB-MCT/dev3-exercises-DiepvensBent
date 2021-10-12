@@ -51,14 +51,32 @@ fun challenge2() {
         println("door unlocked gj")
         challenge3()
     } else {
-        println("door go boom with you aswell")
+        println("you accidentaly trigger alarm and get caught")
         println("GAME OVER")
     }
 
 }
 
 fun challenge3(){
-    
+    println("oh no there is guard")
+    println("will you  1sneak around, 2fight guard, 3take the mop to fight guard")
+    val options2 = setOf("1","2","3")
+    val userChoice = getUserChoice(options2)
+    if (userChoice == "1") {
+        println("you succesfully evade guard as he was sleeping")
+        challenge4()
+    } else if (userChoice == "2"){
+        println("you try to fight but you weak af so now you got caught")
+        println("GAME OVER")
+    } else if (userChoice =="3") {
+        println("you try to take mop but floor slippery and you fall out of window but dw you only first floor and fall on bush")
+        println("but now you need to open door again")
+        challenge2()
+    }
+}
+
+fun challenge4(){
+
 }
 
 fun getUserChoice(options: Set<String>): String? {
