@@ -7,8 +7,5 @@ fun main(){
     val chatPartner = personArray.random()
     chatPartner.introduce()
     chatPartner.talk()
-
-
-
-
+    
 }
