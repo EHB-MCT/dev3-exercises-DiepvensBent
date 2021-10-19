@@ -1,3 +1,5 @@
+import jdk.internal.joptsimple.internal.Strings
+
 fun main(){
     val options = arrayOf("rock","paper","scissors","lizard","spock")
     val computerChoice = options.random()
@@ -32,7 +34,7 @@ fun determineWinner(computerChoice: String, userChoice: String?){
     }
 }
 
-fun main(){
+fun pain(){
     challengeOne()
 }
 
