@@ -3,7 +3,6 @@ open class Person(open val name: String) {
         println("Hi! I'm $name")
     }
     open fun talk(){
-
     }
 }
 

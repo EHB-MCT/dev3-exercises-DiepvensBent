@@ -5,5 +5,4 @@ class Student(override val name: String): Person(name),ChatPartner {
     fun gossip() {
         println("gossip here")
     }
-
 }
