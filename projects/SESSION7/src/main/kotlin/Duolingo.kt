@@ -1,6 +1,6 @@
 class Duolingo(val roundSize: Int = 5,val language: String = arrayOf("English", "Koe").random(),
     ){
-    var words = mutableSetOf<Word>(
+    var words = mutableSetOf(
         EnglishWord("Hallo","Hello"),
         EnglishWord("Dag","Day"),
         EnglishWord("Maan","Moon"),
@@ -22,6 +22,12 @@ class Duolingo(val roundSize: Int = 5,val language: String = arrayOf("English", 
         KoeWord("Kat"),
         KoeWord("Hond")
     )
+    init{
+        words = words.filter { it.language == language }.toMutableSet()
+    }
+
+
+
     fun play() {
         words = words.filter { it.language == language }.toMutableSet()
         val selectedWords = words.shuffled().take(roundSize).toMutableSet()
