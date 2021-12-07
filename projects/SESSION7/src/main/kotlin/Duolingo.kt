@@ -1,4 +1,4 @@
-class Duolingo(val roundSize: Int,val language: String){
+class Duolingo(var roundSize: Int,var language: String, var difficulty: String?){
     var words = mutableSetOf(
         EnglishWord("Hallo","Hello"),
         EnglishWord("Dag","Day"),
@@ -27,7 +27,23 @@ class Duolingo(val roundSize: Int,val language: String){
 
 
 
+
+
+
     fun play() {
+        if (difficulty == "Easy") {
+            this.roundSize = 3
+            this.language = arrayOf("English", "Koe").random()
+            println("Round size = 3 , 1 language")
+        } else if (difficulty == "Hard"){
+            this.roundSize = 6
+            this.language = "all"
+            println("Round size = 6, all languages")
+        } else if (difficulty == "GameJournalist"){
+            this.roundSize = 1
+            this.language = "Koe"
+            println("Round size = 1, Moo")
+        }
         words = words.filter { it.language == language }.toMutableSet()
         val selectedWords = words.shuffled().take(roundSize).toMutableSet()
         while (selectedWords.isNotEmpty()){
