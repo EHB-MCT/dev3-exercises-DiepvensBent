@@ -1,5 +1,4 @@
-class Duolingo(val roundSize: Int = 5,val language: String = arrayOf("English", "Koe").random(),
-    ){
+class Duolingo(val roundSize: Int,val language: String){
     var words = mutableSetOf(
         EnglishWord("Hallo","Hello"),
         EnglishWord("Dag","Day"),
